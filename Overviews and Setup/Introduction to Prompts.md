@@ -2,12 +2,14 @@
 
 Prompt engineering is integral.
 
+[Anthropic's Prompt Guide](https://docs.anthropic.com/claude/prompt-library)
+
 ## Components of a Prompt
 
 * Instructions - tell the model what to do, how to use external information if provided, what to do with the query, and 
 how to construct the output.
 * External Information - or context(s) act as an additional source of knowledge  for the model. These can be manually 
-inserted into the prompt, retrieved via a vector database, or pulled in via other means (APIs, calculations, etc).
+inserted into the prompt, retrieved via a vector database, or pulled in via other means (APIs, calculations, etc.).
 * User Input or query - typically (but not always) a query input into the system by a human user.
 * Output Indicator - marks the beginning of the to-be-generated text.  If generating Python code, we may use import to 
 indicate to the model that it must begin writing Python code (as most Python scripts begin with import).
@@ -24,7 +26,9 @@ Prompt templates are predefined "recipes" for generating prompts for language mo
 
 ## Zero Shot Prompt
 Direct prompting (known as Zero-shot) is the simplest type of prompt. It provides no examples to the model, just instructions. 
-You can also  phrase the instruction as a question, or give the model a "role".
+You can also  phrase the instruction as a question, or give the model a "role". Also, known as a Standard Prompt. 
+
+Asking the correct question is important. Be specific.
 
 ![Zero-Shot Example](./assets/zero-shot.png)
 
